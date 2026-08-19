@@ -1,13 +1,9 @@
-<table>
-<tr>
-<td valign="top">
-
 # Nicolas Mateus
 
 **Full-stack developer from Brazil.**<br />
 I build computer-vision tooling, AI agent infrastructure and product web apps.
 
-### About me
+## About me
 
 - 🔬 Currently building **MangaLens** — you give it a manga/anime character and describe in plain language what you want cut out, and it hands back each part as its own layer. Runs entirely on your machine, no cloud.
 - 🛰️ Before that, **[AgentScope](https://github.com/NickB0ss/agentscope)** — an observability platform for AI agents, tracking prompts, responses, execution flow, tool calls, token usage, cost and errors.
@@ -16,39 +12,42 @@ I build computer-vision tooling, AI agent infrastructure and product web apps.
 - 🦈 Built a *Sharks from Space* entry for the 2025 Space Apps Challenge.
 - 📫 Reach me at **nicolasmateusdecastrosilva@gmail.com**
 
-</td>
-<td width="340" valign="top">
-
-<img width="320" src="./assets/senku_gif2.gif" alt="Senku Ishigami" />
-
-</td>
-</tr>
-</table>
-
 ---
 
-### Things I've built
+## Things I've built
 
-**MangaLens** *(main project — private for now)* — Cutting a character into animatable layers is hours of manual rotoscoping in Photoshop. MangaLens does it from a sentence: *"separate the hair into strands and the accessory on the neck"* comes back as one mask per part, ready to import into After Effects, Premiere or DaVinci.
+### MangaLens *(main project — private for now)*
+Cutting a character into animatable layers is hours of manual rotoscoping in Photoshop. MangaLens does it from a sentence: *"separate the hair into strands and the accessory on the neck"* comes back as one mask per part, ready to import into After Effects, Premiere or DaVinci.
 
 Under the hood it's a pipeline of open-vocabulary detection (Grounding DINO) into pixel-level segmentation (SAM), with alpha matting to clean up the edges and Canny edge detection to split a single mask into instances — individual hair strands, for example. Everything runs locally, including hardware profiles so it works on a 4GB GPU and not just a 12GB one.
+
 `Python` `FastAPI` `PyTorch` `ONNX Runtime` `Transformers` `OpenCV`
 
-**[AgentScope](https://github.com/NickB0ss/agentscope)** — Observability for AI agents. Bun monorepo with web app, API, worker, shared contracts, database package, telemetry helpers and a Node.js SDK, running on Postgres behind Docker Compose.
+### [AgentScope](https://github.com/NickB0ss/agentscope)
+Observability for AI agents. Bun monorepo with web app, API, worker, shared contracts, database package, telemetry helpers and a Node.js SDK, running on Postgres behind Docker Compose.
+
 `Bun` `TypeScript` `PostgreSQL` `Docker`
 
-**[InvestHub](https://github.com/NickB0ss/investhub)** · [live](https://investhub-navigator.vercel.app) — Portfolio tracker for Brazilian stocks. Average price, profit/loss and ROI computed per position, real-time market data, operation history and JWT auth on a serverless API.
+### [InvestHub](https://github.com/NickB0ss/investhub) · [live](https://investhub-navigator.vercel.app)
+Portfolio tracker for Brazilian stocks. Average price, profit/loss and ROI computed per position, real-time market data, operation history and JWT auth on a serverless API.
+
 `React` `TypeScript` `Vite` `TanStack Query` `Express` `MongoDB`
 
-**[ecommerce-hair](https://github.com/NickB0ss/ecommerce-hair)** · [live](https://ecommerce-hair-frontend.vercel.app) — Decoupled e-commerce monorepo: an Express + Supabase REST API, a React storefront, and a separate React 19 admin panel for products, categories and users.
+### [ecommerce-hair](https://github.com/NickB0ss/ecommerce-hair) · [live](https://ecommerce-hair-frontend.vercel.app)
+Decoupled e-commerce monorepo: an Express + Supabase REST API, a React storefront, and a separate React 19 admin panel for products, categories and users.
+
 `React` `TypeScript` `Express` `Supabase` `Tailwind`
 
-**[nutri4kids](https://github.com/NickB0ss/nutri4kids-one-landing-page)** · [live](https://nutri4kids-one-landing-page.vercel.app) — Single-page landing built for a nutrition brand.
+### [nutri4kids](https://github.com/NickB0ss/nutri4kids-one-landing-page) · [live](https://nutri4kids-one-landing-page.vercel.app)
+Single-page landing built for a nutrition brand.
+
 `TypeScript` `React` `Tailwind`
 
 A few other things live in private repos: an AI sales assistant and a video summarizer, both Python.
 
-### Tech I reach for
+---
+
+## Tech I reach for
 
 <div>
   <img align="center" alt="Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
@@ -80,5 +79,3 @@ A few other things live in private repos: an AI sales assistant and a video summ
 *"Get excited."* — **Senku Ishigami**
 
 <sub>Senku doesn't wait for the world to be ready — he builds the thing from scratch until it exists. Same idea here.</sub>
-
-<br clear="left" />
